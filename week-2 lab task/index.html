@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="icon" href="https://th.bing.com/th/id/OIP.aREWvNxvnSBd3mBpoqUHGQHaE8?w=262&h=180&c=7&r=0&o=7&pid=1.7&rm=3" />
+    </head>
+    <body>
+        <h1>LIBRARY MEMBERSHIP</h1>
+        <p>Please complete the form carefully making <i>sure</i> the provided info is <b>accurate</b>.</p>
+        <img src="https://th.bing.com/th/id/OIP.l84rrOBRvAHp-Z78A06iNgHaJ4?w=86&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Bookshelf">
+        <br>
+        <span>Our library prides itself on the collection of over 10,000 titles of various genres to provide you the best reading experience. </span>
+        <br><br>
+        <div><b>REGISTRATION FORM</b></div>
+        <form method="get">
+            <table>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" placeholder="Enter your name" id="name" name="name" required ></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" placeholder="Enter your email" id="email" name="email" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password</label></td>
+                    <td><input type="password" id="pass" placeholder="Enter your password" name="password" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label></td>
+                    <td><input type="number" id="age" name="age" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">DOB</label></td>
+                    <td><input type="date" id="dob" name="dob" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male"/>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female"/>
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="memtype">Membership Type</label></td>
+                    <td>
+                        <select id="memtype" name="memtype" required>
+                            <option value="">Select a membership type</option>
+                            <option value="standard">Standard</option>
+                            <option value="student">Student</option>
+                            <option value="sc">Senior Citizen</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pfp">Profile Photo</label></td>
+                    <td><input type="file" id="pfp" name="pfp"/></td>
+                </tr>
+                <tr>
+                    <td><label for="add">Address</label></td>
+                    <td><textarea id="add" placeholder="Enter your Address" name="add"></textarea></td>
+                </tr>
+            </table>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I have read and agreed to the <a href="./t&c.html" target="_blank">terms and conditions</a></label>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
